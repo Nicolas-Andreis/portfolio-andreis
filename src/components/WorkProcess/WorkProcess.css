@@ -32,13 +32,16 @@
 
 .work-process__list {
   display: grid;
+  margin: 0;
+  padding: 0;
   gap: 16px;
-  counter-reset: process;
+  list-style: none;
 }
 
 .work-process__card {
   position: relative;
   display: flex;
+  min-width: 0;
   min-height: 230px;
   padding: 28px 24px;
   flex-direction: column;
@@ -66,6 +69,7 @@
   position: relative;
   display: inline-flex;
   min-width: 56px;
+  width: 56px;
   height: 56px;
   margin-bottom: 18px;
   padding-inline: 10px;
@@ -91,11 +95,71 @@
   max-width: 280px;
   color: var(--color-text-muted);
   font-size: 0.9rem;
+  line-height: 1.5;
 }
+
+/* Móvil */
+
+@media (max-width: 699px) {
+  .work-process {
+    padding-block: 44px;
+  }
+
+  .work-process__header {
+    margin-bottom: 24px;
+  }
+
+  .work-process__eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .work-process__header h2 {
+    max-width: 290px;
+    margin-inline: auto;
+    font-size: 1.65rem;
+  }
+
+  .work-process__list {
+    gap: 14px;
+  }
+
+  .work-process__card {
+    min-height: 175px;
+    padding: 22px 20px;
+  }
+
+  .work-process__number {
+    top: 10px;
+    right: 14px;
+    font-size: 3.25rem;
+  }
+
+  .work-process__icon {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  .work-process__card h3 {
+    margin-bottom: 6px;
+    font-size: 0.98rem;
+  }
+
+  .work-process__card p {
+    max-width: 240px;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+}
+
+/* Tablet y escritorio */
 
 @media (min-width: 700px) {
   .work-process__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .work-process__card {
