@@ -1,6 +1,6 @@
-import characterCounterImage from '../assets/images/projects/character-counter.png'
-import jardinOnlineImage from '../assets/images/projects/jardin-online.png'
-import habemusPizzaImage from '../assets/images/projects/habemus-pizza.png'
+import characterCounterImage from '../assets/images/projects/character-counter.webp'
+import jardinOnlineImage from '../assets/images/projects/jardin-online.webp'
+import habemusPizzaImage from '../assets/images/projects/habemus-pizza.webp'
 
 const projects = [
   {
