@@ -1,11 +1,12 @@
+import { Hero } from '../../components/Hero/Hero'
+import './Home.css'
 
-const Home = () => {
+function Home() {
   return (
-    <section>
-      <h1>Inicio</h1>
-      <p>Bienvenido a mi portfolio.</p>
-    </section>
+    <>
+      <Hero />
+    </>
   )
 }
 
-export {Home}
+export { Home }

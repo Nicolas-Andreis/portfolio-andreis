@@ -16,6 +16,11 @@
   --color-secondary: #ffc94f;
   --color-secondary-hover: #ffd978;
 
+  --color-success: #22c55e;
+  --color-success-background: rgb(34 197 94 / 10%);
+  --color-success-border: rgb(34 197 94 / 25%);
+  --color-success-shadow: rgb(34 197 94 / 12%);
+
   --color-border: #29384d;
   --color-shadow: rgb(0 0 0 / 25%);
 
@@ -44,6 +49,11 @@
 
   --color-secondary: #e6ad16;
   --color-secondary-hover: #f3bf35;
+
+  --color-success: #08783e;
+  --color-success-background: #e2f6ea;
+  --color-success-border: #9dddb8;
+  --color-success-shadow: rgb(8 120 62 / 15%);
 
   --color-border: #ccd5e2;
   --color-shadow: rgb(21 32 51 / 12%);
