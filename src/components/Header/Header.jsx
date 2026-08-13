@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { ThemeButton } from '../ThemeButton/ThemeButton'
 import './Header.css'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   function toggleMenu() {
     setIsMenuOpen((currentState) => !currentState)
@@ -12,6 +13,19 @@ function Header() {
 
   function closeMenu() {
     setIsMenuOpen(false)
+  }
+
+  function navigateToSection(sectionId) {
+    closeMenu()
+
+    if (location.pathname === '/') {
+      const section = document.getElementById(sectionId)
+
+      section?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
   }
 
   function getNavLinkClass({ isActive }) {
@@ -69,23 +83,23 @@ function Header() {
             </li>
 
             <li>
-              <NavLink
+              <Link
                 className="header__link"
                 to="/#about"
-                onClick={closeMenu}
+                onClick={() => navigateToSection('about')}
               >
                 Sobre mí
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
+              <Link
                 className="header__link"
                 to="/#skills"
-                onClick={closeMenu}
+                onClick={() => navigateToSection('skills')}
               >
                 Habilidades
-              </NavLink>
+              </Link>
             </li>
 
             <li>

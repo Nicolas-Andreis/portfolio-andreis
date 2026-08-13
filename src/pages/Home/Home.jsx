@@ -1,5 +1,6 @@
 import { Hero } from '../../components/Hero/Hero'
 import { WorkProcess } from '../../components/WorkProcess/WorkProcess'
+import { About } from '../../components/About/About'
 import './Home.css'
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <>
       <Hero />
       <WorkProcess />
+      <About />
     </>
   )
 }

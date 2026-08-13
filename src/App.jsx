@@ -4,11 +4,14 @@ import { Footer } from './components/Footer/Footer'
 import { Home } from './pages/Home/Home'
 import { Projects } from './pages/Projects/Projects'
 import { Contact } from './pages/Contact/Contact'
+import { ScrollToHash } from './components/ScrollToHash/ScrollToHash'
 
 
 function App() {
   return (
     <div className="app">
+      <ScrollToHash />
+
       <Header />
 
       <main>
