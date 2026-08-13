@@ -1,0 +1,118 @@
+.work-process {
+  width: 100%;
+  padding-block: 64px;
+  border-block: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.work-process__container {
+  width: min(100% - 32px, var(--container-width));
+  margin-inline: auto;
+}
+
+.work-process__header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.work-process__eyebrow {
+  margin-bottom: 6px;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-process__header h2 {
+  color: var(--color-text);
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.work-process__list {
+  display: grid;
+  gap: 16px;
+  counter-reset: process;
+}
+
+.work-process__card {
+  position: relative;
+  display: flex;
+  min-height: 230px;
+  padding: 28px 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background-color: var(--color-background);
+  text-align: center;
+  box-shadow: 0 10px 30px var(--color-shadow);
+}
+
+.work-process__number {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  color: var(--color-primary-soft);
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.work-process__icon {
+  position: relative;
+  display: inline-flex;
+  min-width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  padding-inline: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-primary);
+  background-color: var(--color-primary-soft);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.work-process__card h3 {
+  position: relative;
+  margin-bottom: 8px;
+  color: var(--color-text);
+  font-size: 1.05rem;
+}
+
+.work-process__card p {
+  position: relative;
+  max-width: 280px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+  .work-process__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .work-process__card {
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work-process {
+    padding-block: 80px;
+  }
+
+  .work-process__list {
+    gap: 24px;
+  }
+
+  .work-process__card {
+    padding: 32px;
+  }
+}
