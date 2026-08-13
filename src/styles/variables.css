@@ -31,6 +31,10 @@
   --radius-medium: 12px;
 
   --transition: 200ms ease;
+
+  --color-error: #fb7185;
+  --color-error-background: rgb(251 113 133 / 10%);
+  --color-error-border: rgb(251 113 133 / 35%);
 }
 
 [data-theme="light"] {
@@ -57,4 +61,8 @@
 
   --color-border: #ccd5e2;
   --color-shadow: rgb(21 32 51 / 12%);
+
+  --color-error: #b4233c;
+  --color-error-background: #fff0f2;
+  --color-error-border: #e4a1ad;
 }

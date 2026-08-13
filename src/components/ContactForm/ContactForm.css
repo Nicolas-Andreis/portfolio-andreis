@@ -1,0 +1,114 @@
+.contact-form {
+  display: flex;
+  padding: clamp(22px, 5vw, 36px);
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background-color: var(--color-surface);
+  box-shadow: 0 16px 44px var(--color-shadow);
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact-form__group label {
+  color: var(--color-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.contact-form__group input,
+.contact-form__group textarea {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.contact-form__group input {
+  min-height: 48px;
+  padding: 10px 13px;
+}
+
+.contact-form__group textarea {
+  min-height: 150px;
+  padding: 13px;
+  resize: vertical;
+}
+
+.contact-form__group input::placeholder,
+.contact-form__group textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.75;
+}
+
+.contact-form__group input:hover,
+.contact-form__group textarea:hover {
+  border-color: var(--color-primary);
+}
+
+.contact-form__group input[aria-invalid="true"],
+.contact-form__group textarea[aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.contact-form__error,
+.contact-form__general-error {
+  color: var(--color-error);
+  font-size: 0.78rem;
+}
+
+.contact-form__button {
+  display: inline-flex;
+  min-height: 48px;
+  padding: 12px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-small);
+  color: #ffffff;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form__button:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.contact-form__status:empty {
+  display: none;
+}
+
+.contact-form__success,
+.contact-form__general-error {
+  padding: 12px 14px;
+  border-radius: var(--radius-small);
+}
+
+.contact-form__success {
+  border: 1px solid var(--color-success-border);
+  color: var(--color-success);
+  background-color: var(--color-success-background);
+  font-size: 0.82rem;
+}
+
+.contact-form__general-error {
+  border: 1px solid var(--color-error-border);
+  background-color: var(--color-error-background);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .contact-form__button {
+    transition:
+      filter var(--transition),
+      transform var(--transition);
+  }
+}
