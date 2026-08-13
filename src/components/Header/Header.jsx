@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { ThemeButton } from '../ThemeButton/ThemeButton'
 import './Header.css'
 
 function Header() {
@@ -21,7 +22,10 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="header__nav" aria-label="Navegación principal">
+      <nav
+        className="header__nav"
+        aria-label="Navegación principal"
+      >
         <NavLink
           className="header__logo"
           to="/"
@@ -105,13 +109,17 @@ function Header() {
             </li>
           </ul>
 
-          <NavLink
-            className="header__cta"
-            to="/contact"
-            onClick={closeMenu}
-          >
-            Agendar llamada
-          </NavLink>
+          <div className="header__actions">
+            <NavLink
+              className="header__cta"
+              to="/contact"
+              onClick={closeMenu}
+            >
+              Agendar llamada
+            </NavLink>
+
+            <ThemeButton />
+          </div>
         </div>
       </nav>
     </header>

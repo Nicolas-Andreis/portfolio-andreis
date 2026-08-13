@@ -4,7 +4,7 @@ import { Footer } from './components/Footer/Footer'
 import { Home } from './pages/Home/Home'
 import { Projects } from './pages/Projects/Projects'
 import { Contact } from './pages/Contact/Contact'
-import './App.css'
+
 
 function App() {
   return (
