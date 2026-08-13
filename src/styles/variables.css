@@ -1,0 +1,18 @@
+:root {
+  --color-background: #050b14;
+  --color-surface: #0d1624;
+  --color-surface-light: #151f2e;
+  --color-text: #f5f7fa;
+  --color-text-muted: #a7b0be;
+  --color-primary: #9b5cff;
+  --color-secondary: #f5b942;
+  --color-border: #293446;
+
+  --container-width: 1200px;
+  --header-height: 72px;
+
+  --radius-small: 6px;
+  --radius-medium: 12px;
+
+  --transition: 200ms ease;
+}
