@@ -1,0 +1,124 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.footer__container {
+  display: grid;
+  width: min(100% - 32px, var(--container-width));
+  margin-inline: auto;
+  padding-block: 56px;
+  gap: 40px;
+}
+
+.footer__identity {
+  max-width: 380px;
+}
+
+.footer__logo {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.footer__logo::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.footer__identity p,
+.footer__contact p {
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.footer__navigation h2,
+.footer__contact h2 {
+  margin-bottom: 16px;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.footer__navigation ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer__navigation a,
+.footer__contact > a {
+  color: var(--color-text-muted);
+  font-size: 0.86rem;
+}
+
+.footer__navigation a:hover,
+.footer__contact a:hover {
+  color: var(--color-primary);
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.footer__social {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer__social a {
+  display: inline-flex;
+  min-height: 40px;
+  padding: 8px 13px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.footer__social a:hover {
+  border-color: var(--color-primary);
+}
+
+.footer__bottom {
+  display: flex;
+  width: min(100% - 32px, var(--container-width));
+  margin-inline: auto;
+  padding-block: 20px;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+@media (min-width: 700px) {
+  .footer__container {
+    grid-template-columns: 1.4fr 0.7fr 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
