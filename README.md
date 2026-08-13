@@ -8,8 +8,8 @@ La aplicación presenta mi perfil profesional, habilidades técnicas, metodolog�
 
 ## Demo
 
-- **Sitio publicado:** se añadirá después del despliegue.
-- **Repositorio:** [github.com/Nicolas-Andreis/nicolas-andreis](https://github.com/Nicolas-Andreis/nicolas-andreis)
+- **Sitio publicado:** [nicolas-andreis.vercel.app](https://nicolas-andreis.vercel.app/)
+- **Repositorio:** [github.com/Nicolas-Andreis/portfolio-andreis](https://github.com/Nicolas-Andreis/portfolio-andreis)
 
 ## Funcionalidades
 
@@ -38,6 +38,7 @@ La aplicación presenta mi perfil profesional, habilidades técnicas, metodolog�
 - Local Storage
 - Intersection Observer
 - Git y GitHub
+- Vercel
 
 ## Capturas
 
@@ -79,12 +80,13 @@ La aplicación presenta mi perfil profesional, habilidades técnicas, metodolog�
 - Tres páginas dentro del flujo de navegación.
 - Parámetros de búsqueda mediante `useSearchParams`.
 - Formulario controlado con validaciones.
-- Diseño responsive.
+- Diseño responsive desde 320 px hasta 2000 px.
 - Temas claro y oscuro.
 - Estilos accesibles y navegación mediante teclado.
 - Código organizado siguiendo los principios DRY, KISS y YAGNI.
 - Código publicado en GitHub.
-- Despliegue de producción.
+- Despliegue de producción en Vercel.
+- Configuración de rutas SPA para permitir el acceso directo y la recarga.
 
 ## Proyectos presentados
 
@@ -119,8 +121,8 @@ Requisitos:
 Para ejecutar el proyecto localmente:
 
 ```bash
-git clone https://github.com/Nicolas-Andreis/nicolas-andreis.git
-cd nicolas-andreis
+git clone https://github.com/Nicolas-Andreis/portfolio-andreis.git
+cd portfolio-andreis
 npm install
 npm run dev
 ```
@@ -160,6 +162,8 @@ Las animaciones se implementaron con `IntersectionObserver`, sin agregar depende
 
 Las imágenes promocionales se convirtieron a WebP para reducir su peso y mejorar la carga en dispositivos móviles.
 
+Se añadió una configuración de rewrite para que las rutas administradas por React Router funcionen al abrirlas o recargarlas directamente en Vercel.
+
 ## Formulario de contacto
 
 El formulario demuestra:
@@ -169,7 +173,18 @@ El formulario demuestra:
 - Mensajes de error accesibles.
 - Confirmación visual.
 
-Actualmente funciona como demostración y no envía correos reales. El contacto directo se encuentra disponible mediante WhatsApp y correo electrónico.
+Actualmente funciona como demostración y no envía correos reales. El contacto directo está disponible mediante WhatsApp y correo electrónico.
+
+## Accesibilidad
+
+- Contraste diferenciado para temas claro y oscuro.
+- Indicadores de foco visibles.
+- Etiquetas asociadas a los campos del formulario.
+- Mensajes de error vinculados mediante atributos ARIA.
+- Navegación accesible mediante teclado.
+- Menú móvil con `aria-expanded` y `aria-controls`.
+- Animaciones desactivadas cuando el sistema solicita reducir el movimiento.
+- Idioma principal del documento configurado en español.
 
 ## Dificultades encontradas
 
@@ -180,6 +195,7 @@ Actualmente funciona como demostración y no envía correos reales. El contacto 
 - Crear animaciones accesibles sin dependencias adicionales.
 - Optimizar imágenes sin perder calidad visual.
 - Mantener componentes reutilizables y estilos organizados.
+- Configurar el fallback de rutas para el despliegue de una SPA.
 
 ## Autor
 
