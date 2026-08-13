@@ -5,6 +5,7 @@ import { Home } from './pages/Home/Home'
 import { Projects } from './pages/Projects/Projects'
 import { Contact } from './pages/Contact/Contact'
 import { ScrollToHash } from './components/ScrollToHash/ScrollToHash'
+import { WhatsAppButton } from './components/WhatsAppButton/WhatsAppButton'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

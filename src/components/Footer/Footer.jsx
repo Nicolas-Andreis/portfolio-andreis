@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import portfolioLogo from '../../assets/logo/portfolio-logo.png'
 import './Footer.css'
 
 function Footer() {
@@ -13,7 +14,14 @@ function Footer() {
             to="/"
             aria-label="Ir a la página de inicio"
           >
-            NA
+            <img
+              src={portfolioLogo}
+              width="48"
+              height="48"
+              alt=""
+            />
+
+            <span>Nicolás Andreis</span>
           </Link>
 
           <p>
@@ -70,7 +78,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/nicol%C3%A1s-andreis/"
               target="_blank"
               rel="noreferrer"
             >

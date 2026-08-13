@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { ThemeButton } from '../ThemeButton/ThemeButton'
+import portfolioLogo from '../../assets/logo/portfolio-logo.png'
 import './Header.css'
 
 function Header() {
@@ -46,7 +47,14 @@ function Header() {
           aria-label="Ir a la página de inicio"
           onClick={closeMenu}
         >
-          NA
+          <img
+            src={portfolioLogo}
+            alt=""
+            width="48"
+            height="48"
+          />
+
+          <span>Nicolás Andreis</span>
         </NavLink>
 
         <button
