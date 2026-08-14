@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import portfolioLogo from '../../assets/logo/portfolio-logo.png'
+import portfolioLogo from '../../assets/logo/portfolio-logo.webp'
 import './Footer.css'
 
 function Footer() {
