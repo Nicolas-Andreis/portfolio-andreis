@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import aboutImage from '../../assets/images/about/about.jpeg'
+import aboutImage from '../../assets/images/about/about.webp'
 import './About.css'
 
 function About() {

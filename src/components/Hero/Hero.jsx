@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import profileImage from '../../assets/images/profile/profile.jpeg'
+import profileImage from '../../assets/images/profile/profile.webp'
 import './Hero.css'
 
 function Hero() {
