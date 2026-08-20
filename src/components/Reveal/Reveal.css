@@ -22,8 +22,13 @@
 }
 
 .reveal--right {
-  --reveal-x: 70px;
-  --reveal-y: 0;
+  --reveal-x: 0;
+}
+
+@media (min-width: 700px) {
+  .reveal--right {
+    --reveal-x: 70px;
+  }
 }
 
 .reveal--scale {

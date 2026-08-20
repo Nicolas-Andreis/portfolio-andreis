@@ -20,13 +20,10 @@ function Header() {
     closeMenu()
 
     if (location.pathname === '/') {
-      const section = document.getElementById(sectionId)
-
-      section?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
+      return
     }
+
+    window.location.assign(`/#${sectionId}`)
   }
 
   function getNavLinkClass({ isActive }) {
@@ -93,7 +90,7 @@ function Header() {
             <li>
               <Link
                 className="header__link"
-                to="/#about"
+                to={location.pathname === '/' ? '#about' : '/#about'}
                 onClick={() => navigateToSection('about')}
               >
                 Sobre mí
@@ -103,7 +100,7 @@ function Header() {
             <li>
               <Link
                 className="header__link"
-                to="/#skills"
+                to={location.pathname === '/' ? '#skills' : '/#skills'}
                 onClick={() => navigateToSection('skills')}
               >
                 Habilidades

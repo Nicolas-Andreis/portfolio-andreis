@@ -7,14 +7,15 @@ function ScrollToHash() {
   useEffect(() => {
     if (hash) {
       const elementId = hash.slice(1)
-      const element = document.getElementById(elementId)
 
-      if (element) {
-        element.scrollIntoView({
+      window.requestAnimationFrame(() => {
+        const element = document.getElementById(elementId)
+
+        element?.scrollIntoView({
           behavior: 'smooth',
           block: 'start',
         })
-      }
+      })
 
       return
     }

@@ -1,5 +1,5 @@
 .header { position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--color-border); background: var(--color-header-background); backdrop-filter: blur(16px); }
-.header__nav { position: relative; display: flex; width: min(100% - 40px, var(--container-width)); min-height: var(--header-height); margin-inline: auto; align-items: center; justify-content: space-between; }
+.header__nav { position: relative; display: flex; width: min(calc(100% - 40px), var(--container-width)); min-height: var(--header-height); margin-inline: auto; align-items: center; justify-content: space-between; }
 .header__logo { display: inline-flex; align-items: center; gap: 10px; color: var(--color-text); font-weight: 800; letter-spacing: -.03em; }
 .header__logo img { width: 40px; height: 40px; object-fit: contain; }
 .header__logo span { display: none; font-size: .88rem; }
@@ -8,7 +8,7 @@
 .header__menu-button[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .header__menu-button[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .header__menu-button[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.header__menu { position: absolute; top: 100%; right: -20px; left: -20px; display: flex; max-height: 0; padding-inline: 20px; flex-direction: column; gap: 20px; overflow: hidden; visibility: hidden; border-bottom: 1px solid transparent; background: var(--color-background); opacity: 0; transition: max-height 300ms ease, padding 300ms ease, opacity var(--transition), visibility var(--transition); }
+.header__menu { position: absolute; top: 100%; right: 0; left: 0; display: flex; max-height: 0; padding-inline: 20px; flex-direction: column; gap: 20px; overflow: hidden; visibility: hidden; border-bottom: 1px solid transparent; background: var(--color-background); opacity: 0; transition: max-height 300ms ease, padding 300ms ease, opacity var(--transition), visibility var(--transition); }
 .header__menu--open { max-height: 550px; padding-block: 22px; visibility: visible; border-color: var(--color-border); opacity: 1; }
 .header__links { display: flex; flex-direction: column; gap: 2px; }
 .header__link { position: relative; display: block; padding: 11px 8px; color: var(--color-text-muted); font-size: .86rem; font-weight: 600; }
