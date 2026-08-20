@@ -9,7 +9,7 @@ function Hero() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero__content">
         <div className="hero__introduction">
-          <p className="hero__greeting">Hola, soy</p>
+          <p className="hero__greeting">Frontend Developer · React</p>
 
           <h1 className="hero__title" id="hero-title">
             Nicolás <span>Andreis</span>

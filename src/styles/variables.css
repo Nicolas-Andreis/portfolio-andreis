@@ -1,21 +1,21 @@
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
-  --color-background: #111217;
-  --color-header-background: rgb(17 18 23 / 92%);
-  --color-surface: #1a1b22;
-  --color-surface-light: #24252e;
-  --color-text: #f4f1eb;
-  --color-text-muted: #a6a3a0;
+  --color-background: #111016;
+  --color-header-background: rgb(17 16 22 / 90%);
+  --color-surface: #191721;
+  --color-surface-light: #24202d;
+  --color-text: #f7f4ee;
+  --color-text-muted: #aaa5ad;
   --color-primary: #a78bfa;
   --color-primary-soft: rgb(167 139 250 / 13%);
-  --color-secondary: #f4c95d;
-  --color-secondary-hover: #f8d980;
+  --color-secondary: #f1c75b;
+  --color-secondary-hover: #f7d67d;
   --color-success: #63d391;
   --color-success-background: rgb(99 211 145 / 10%);
   --color-success-border: rgb(99 211 145 / 30%);
   --color-success-shadow: rgb(99 211 145 / 16%);
-  --color-border: #34353e;
+  --color-border: #38333f;
   --color-shadow: rgb(0 0 0 / 28%);
   --color-error: #f28b9b;
   --color-error-background: rgb(242 139 155 / 10%);
@@ -29,21 +29,21 @@
 
 [data-theme="light"] {
   color-scheme: light;
-  --color-background: #f5f3ef;
-  --color-header-background: rgb(245 243 239 / 92%);
+  --color-background: #f8f6f3;
+  --color-header-background: rgb(248 246 243 / 90%);
   --color-surface: #fffdfa;
-  --color-surface-light: #ece9e3;
-  --color-text: #1c1b20;
-  --color-text-muted: #706d72;
-  --color-primary: #7457d8;
-  --color-primary-soft: rgb(116 87 216 / 11%);
-  --color-secondary: #c18c11;
-  --color-secondary-hover: #d2a21b;
+  --color-surface-light: #efebf4;
+  --color-text: #211e26;
+  --color-text-muted: #706b75;
+  --color-primary: #7259c9;
+  --color-primary-soft: rgb(114 89 201 / 11%);
+  --color-secondary: #b78312;
+  --color-secondary-hover: #c99622;
   --color-success: #287d4c;
   --color-success-background: #e8f5eb;
   --color-success-border: #a9d7b5;
   --color-success-shadow: rgb(40 125 76 / 15%);
-  --color-border: #d9d5ce;
+  --color-border: #ddd8df;
   --color-shadow: rgb(39 34 28 / 11%);
   --color-error: #b54b5e;
   --color-error-background: #fff0f2;

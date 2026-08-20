@@ -104,7 +104,7 @@ function Projects() {
             direction="up"
             delay={index * 120}
           >
-            <ProjectCard project={project} />
+            <ProjectCard project={project} index={index} />
           </Reveal>
         ))}
       </div>
